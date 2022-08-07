@@ -1,0 +1,26 @@
+ /* version tablette */
+ 
+ @media (max-width: 992px) {
+    
+    img{
+        width: 50px;
+    }
+
+   
+    p{
+        font-size: 13px;
+    }
+
+    .logo{
+        width: 15%;
+    }
+}
+
+  /* version mobile */
+  @media (max-width: 768px) {
+   
+    .logo{
+        width: 30%;
+    }
+
+}
