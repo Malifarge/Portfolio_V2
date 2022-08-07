@@ -4,7 +4,10 @@ body{
     background: #242121;
     color: white;
     font-family: 'Roboto', sans-serif;
+    overflow: hidden;
 }
+
+
 
 .flex{
     display: flex;
@@ -46,6 +49,10 @@ nav{
     gap: 20px;
 }
 
+section{
+    width: 90%;
+}
+
 a{
     color: rgba(255, 255, 255, 0.539);
     text-decoration: none;
@@ -63,6 +70,7 @@ button{
     width: 150px;
     height: 50px;
     color: rgba(255, 255, 255, 0.539);
+    font-size: 20px;
 }
 
 button:hover{
@@ -70,3 +78,49 @@ button:hover{
     text-decoration: underline 2px #FC7987;
 }
 
+.blur{
+    position: absolute;
+    right: -500px;
+    bottom: -400px;
+    width: 664px;
+    height: 491px;
+    background: rgba(215, 96, 109, 0.6);
+    filter: blur(420px);
+}
+
+/* version tablette */
+@media (max-width: 992px) {
+
+    .telclmn{
+        flex-direction: column;
+    }
+
+    article, section{
+        gap: 20px;
+    }
+
+    .logo{
+        width: 40%;
+        align-self: center;
+    }
+    
+  }
+  
+  /* version mobile */
+  @media (max-width: 768px) {
+        h1{
+            font-size: 45px;
+        }
+
+        h2{
+            font-size: 30px;
+        }
+
+        button{
+            width: 125px;
+        }
+
+        p{
+            font-size: 15px;
+        }
+  }

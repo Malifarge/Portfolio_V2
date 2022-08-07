@@ -1,0 +1,11 @@
+ /* version mobile */
+ @media (max-width: 768px) {
+   
+    p{
+        font-size: 13px;
+    }
+
+    .logo{
+        width: 20%;
+    }
+}
