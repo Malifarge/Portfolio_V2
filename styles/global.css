@@ -113,6 +113,15 @@ button:hover{
   
   /* version mobile */
   @media (max-width: 768px) {
+
+        body{
+            overflow: visible;
+        }
+
+        .blur{
+            display: none;
+        }
+
         h1{
             font-size: 45px;
         }
