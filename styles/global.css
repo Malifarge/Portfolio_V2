@@ -58,14 +58,43 @@ section{
     width: 90%;
 }
 
+@keyframes underlineAppeared {
+    0%{
+        color: rgba(255, 255, 255, 0.500);
+        text-decoration: underline 2px #fc798600;
+    }
+
+    25%{
+        color: rgba(255, 255, 255, 0.625);
+        text-decoration: underline 2px #fc798645;
+    }
+
+    50%{
+        color: rgba(255, 255, 255, 0.750);
+        text-decoration: underline 2px #fc79867b;
+    }
+
+    75%{
+        color: rgba(255, 255, 255, 0.875);
+        text-decoration: underline 2px #fc7986b8;
+    }
+
+    100%{
+        color: rgba(255, 255, 255, 1);
+        text-decoration: underline 2px #fc7986;
+    }
+}
+
 a{
-    color: rgba(255, 255, 255, 0.539);
+    color: rgba(255, 255, 255, 0.500);
     text-decoration: none;
 }
 
-a:hover{
-    color: white;
-    text-decoration: underline 2px #FC7987;
+a:hover, button:hover{ 
+    animation: underlineAppeared 0.5s;
+    color: rgba(255, 255, 255, 1);
+    text-decoration: underline 2px #fc7986;
+    cursor: pointer;
 }
 
 button{
@@ -74,14 +103,10 @@ button{
     border-radius: 50px;
     width: 150px;
     height: 50px;
-    color: rgba(255, 255, 255, 0.539);
+    color: rgba(255, 255, 255, 0.500);
     font-size: 20px;
 }
 
-button:hover{
-    color: white;
-    text-decoration: underline 2px #FC7987;
-}
 
 .blur{
     position: absolute;
